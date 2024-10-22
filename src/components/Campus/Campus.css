@@ -1,0 +1,54 @@
+.campus{
+    width: 85%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.gallery img{
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+.darkBtn img{
+    width: 1.5rem;
+    padding-left:0.5rem;
+}
+
+@media screen and (max-width:1250px) {
+    .gallery img{
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width:1202px) {
+    .gallery img{
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width:884px) {
+    .campus{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .gallery img{
+        width: 8rem;
+    }
+
+    .gallery{
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 1rem;
+    }
+}
+

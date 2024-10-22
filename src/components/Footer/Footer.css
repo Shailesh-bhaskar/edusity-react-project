@@ -1,0 +1,33 @@
+.footer{
+    margin: 1rem auto 0rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.01rem solid gray;
+    padding: 1.5rem 0;
+}
+
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:660px) {
+    .footer{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .footer{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer{
+        font-size: 0.8rem;
+    }
+}

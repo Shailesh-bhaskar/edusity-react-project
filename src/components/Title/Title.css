@@ -1,0 +1,13 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.title h2{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    text-transform: none;
+}

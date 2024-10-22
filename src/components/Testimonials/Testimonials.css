@@ -1,0 +1,184 @@
+.testimonials{
+    margin: 8rem auto;
+    padding: 0 5rem;
+    position: relative;
+}
+
+.next-btn, .back-btn{
+    width: 3rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 1rem;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.back-btn{
+    right: auto;
+    left: 0;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider ul{
+    width: 200%;
+    display: flex; 
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li{
+    width: 50%;
+    list-style: none;
+    padding: 1rem;
+}
+
+.slide{
+    box-shadow: 0.05rem 0.02rem 2rem rgb(232, 232, 232);
+    padding: 2.2rem;
+    line-height: 1.5rem;
+}
+
+.user-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.user-info img{
+    width: 4rem;
+    border: 0.3rem solid rgb(40, 40, 144);
+    border-radius: 2rem;
+}
+
+.user-info div{
+    line-height: 1.5rem;
+}
+
+.user-info h3{
+    color: rgb(40, 40, 144);
+}
+
+.user-info span{
+    color: gray;
+    font-weight: 500;
+}
+
+.slide p{
+    color: rgb(83, 82, 82);
+}
+
+@media screen and (max-width:884px) {
+    .testimonials{
+        margin-top: 4rem;
+    }
+
+    .slide{
+        padding: 1rem;
+        line-height: 0rem;
+    }
+
+    .user-info{
+        gap: 0.8rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .user-info img{
+        display: block;
+        width: 3rem;
+        border: 0.2rem solid rgb(40, 40, 144);
+    }
+
+    .user-info div{
+        line-height: 0.8rem;
+    }
+
+    .user-info h3 , .user-info span{
+        font-size: 0.8rem;
+    }
+
+    .slide p{
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .testimonials{
+        padding: 0rem 3rem;
+    }
+
+    .slide{
+        padding: 0.5rem;
+        line-height: 0rem;
+    }
+
+    .slider ul li{
+        padding: 0.5rem;
+    }
+
+    .user-info{
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .user-info img{
+        width: 2.2rem;
+        border: 0.1rem solid rgb(40, 40, 144);
+    }
+
+    .user-info div{
+        line-height: 1.1rem;
+    }
+
+    .user-info h3 , .user-info span{
+        font-size: 1rem;
+    }
+
+    .slide p{
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+    }
+
+    .next-btn, .back-btn{
+        width: 2.2rem;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .testimonials{
+        padding: 0rem 2rem;
+    }
+
+    .user-info{
+        gap: 0.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .user-info img{
+        width: 2rem;
+        border: 0.1rem solid rgb(40, 40, 144);
+    }
+
+    .user-info div{
+        line-height: 0.9rem;
+    }
+
+    .user-info h3 , .user-info span{
+        font-size: 0.8rem;
+    }
+
+    .slide p{
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+}

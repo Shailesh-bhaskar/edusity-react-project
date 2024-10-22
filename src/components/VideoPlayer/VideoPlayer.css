@@ -1,0 +1,34 @@
+.video-player{
+    width: 100%;
+    height: 100%;
+    margin: 0rem auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.774);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-player video{
+    width: 25rem;
+    border: 0.2rem solid white;
+}
+
+.video-player.hide{
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .video-player video{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .video-player video{
+        width: 12rem;
+    }
+}
